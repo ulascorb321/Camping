@@ -1,0 +1,831 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
+body {
+  background-color: rgb(36, 35, 35);
+  overflow-x: hidden;
+}
+
+li {
+  font-size: 20px;
+  margin-left: 10%;
+}
+
+.navbar-brand {
+  color: rgb(187, 177, 177);
+  font-size: 20px;
+  margin-left: 5%;
+}
+
+.navbar-brand:hover {
+  color: white;
+}
+
+.nav-link {
+  color: rgb(187, 177, 177);
+}
+
+.nav-link:hover {
+  color: white;
+}
+
+form {
+  margin-right: 5%;
+}
+
+#mainfoto {
+  height: 100vh;
+  position: relative;
+}
+
+#navbar {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
+
+#ara {
+  border-color: rgb(187, 177, 177);
+  color: rgb(187, 177, 177);
+  transition: all 0.3s;
+}
+
+#ara:hover {
+  background-color: white;
+  color: black;
+}
+
+hr {
+  position: absolute;
+  z-index: 1;
+  width: 90%;
+  margin-left: 5%;
+  color: rgb(187, 177, 177);
+  margin-top: 5%;
+  opacity: 40%;
+}
+
+.anasayfaBaslik {
+  display: flex;
+  justify-content: center;
+}
+
+#baslik1 {
+  position: absolute;
+  color: white;
+  z-index: 1;
+  font-family: monospace;
+  margin-top: 10%;
+  font-weight: bold;
+  text-align: center;
+  /* margin-left: 33%; */
+  letter-spacing: 10px;
+  font-size: 50px;
+  text-shadow: rgba(255, 255, 255, 0.226) 5px 5px;
+}
+
+#row1 {
+  width: 80%;
+}
+
+#col1 h3 {
+  color: white;
+  text-align: center;
+  padding-top: 3%;
+}
+
+#col1 p {
+  color: white;
+  text-align: center;
+  padding-top: 7%;
+}
+
+#col2 h3 {
+  color: white;
+  text-align: center;
+  padding-top: 3%;
+}
+
+#col2 p {
+  color: white;
+  text-align: center;
+  padding-top: 7%;
+}
+
+#col3 h3 {
+  color: white;
+  text-align: center;
+  padding-top: 3%;
+}
+
+#col3 p {
+  color: white;
+  text-align: center;
+  padding-top: 7%;
+}
+
+#col4 h3 {
+  color: white;
+  text-align: center;
+  padding-top: 3%;
+}
+
+#col4 p {
+  color: white;
+  text-align: center;
+  padding-top: 7%;
+}
+
+#col4 {
+  margin-left: 75%;
+  background-color: rgba(41, 39, 39, 0.863);
+  width: 160px;
+  height: 110px;
+  z-index: 1;
+  margin-top: 20%;
+  position: absolute;
+
+}
+
+#col3 {
+  margin-left: 55%;
+  background-color: rgba(0, 0, 0, 0.877);
+  width: 160px;
+  height: 110px;
+  z-index: 1;
+  margin-top: 20%;
+  position: absolute;
+
+}
+
+#col2 {
+  margin-left: 35%;
+  background-color: rgba(41, 39, 39, 0.863);
+  width: 160px;
+  height: 110px;
+  z-index: 1;
+  margin-top: 20%;
+  position: absolute;
+
+}
+
+#col1 {
+  margin-left: 15%;
+  background-color: rgba(0, 0, 0, 0.877);
+  width: 160px;
+  height: 110px;
+  z-index: 1;
+  margin-top: 20%;
+  position: absolute;
+
+}
+
+#firstcard {
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.582);
+  margin-top: 36%;
+  margin-left: 5%;
+  color: white;
+  width: 400px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+#firstcard:hover {
+  background-color: rgba(65, 64, 64, 0.582);
+}
+
+.carda {
+  color: white;
+  text-decoration: none;
+  transition: all 1s;
+}
+
+.carda:hover {
+  letter-spacing: 3px;
+  color: black;
+}
+
+#secondcard {
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.582);
+  margin-top: 36%;
+  margin-left: 35%;
+  color: white;
+  width: 400px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+#secondcard:hover {
+  background-color: rgba(65, 64, 64, 0.582);
+}
+
+.hakkimizda {
+  width: 100%;
+  text-align: center;
+}
+
+#hakkimizdabaslik {
+  color: white;
+  font-size: 60px;
+  letter-spacing: 10px;
+  margin-top: 3%;
+  font-family: monospace;
+  display: inline-block;
+  padding-bottom: 0.25rem;
+  position: relative;
+}
+
+#hakkimizdap {
+  color: white;
+  font-size: 30px;
+  margin-top: 3%;
+}
+
+#hakkimizdabaslik::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin-left: -1%;
+  width: 435px;
+  height: 4px;
+  background-color: rgb(223, 66, 9);
+}
+
+.footer-section {
+  box-sizing: border-box;
+  margin-top: 0%;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  color: white;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+  background-color: rgba(8, 8, 8, 0.685);
+}
+
+.footer-section h2 {
+  margin-bottom: 1rem;
+  position: relative;
+  color: white;
+}
+
+.footer-section h2::after {
+  content: "";
+  width: 4rem;
+  height: .2rem;
+  background-color: rgb(223, 66, 9);
+  position: absolute;
+  top: 2.5rem;
+  left: 0;
+}
+
+.footer-section p {
+  transition: all .2s linear;
+  margin-bottom: .6em;
+  color: white;
+  cursor: pointer;
+}
+
+.footer-section .footer-item a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.footer-section .footer-item p:hover {
+  transition: all .2s linear;
+  transform: translateX(4px);
+}
+
+.footer-section .footer-item1 p:hover {
+  transition: all .2s linear;
+  transform: translateX(4px);
+}
+
+.footer-section .footer-item a:hover {
+  color: rgb(223, 66, 9);
+}
+
+.footer-item {
+  margin-left: 0%;
+}
+
+.footer-item1 {
+  margin-left: 2%;
+}
+
+.footerust {
+  width: 100%;
+  height: 10px;
+  background-color: rgb(223, 66, 9);
+  position: relative;
+  margin-top: 10%;
+}
+
+.nedenbiz {
+  margin-top: 10%;
+  margin-left: 4%;
+  width: 90%;
+}
+
+#nedenbizfoto {
+  width: 500px;
+  height: 500px;
+  border-radius: 3%;
+  margin-top: 3%;
+}
+
+.nedenbizyazi {
+  margin-top: 10%;
+  margin-left: -10%;
+  width: 85%;
+}
+
+.nedenbizyazi h3 {
+  font-size: 40px;
+  color: white;
+}
+
+#nedenbizbtn {
+  width: 200px;
+  margin-top: 15%;
+  height: 50px;
+  background-color: rgb(223, 66, 9);
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 5%;
+}
+
+.urunlerBaslik {
+  display: flex;
+  justify-content: center;
+}
+
+#baslikUrunler {
+  position: absolute;
+  color: white;
+  z-index: 1;
+  font-family: monospace;
+  margin-top: 10%;
+  font-weight: bold;
+  /* margin-left: 33%; */
+  letter-spacing: 10px;
+  font-size: 50px;
+  text-shadow: rgba(255, 255, 255, 0.226) 5px 5px;
+}
+
+#urunlerimizyazi {
+  text-shadow: 0 0 7px rgba(255, 255, 255, .3), 0 0 3px rgba(255, 255, 255, .3);
+  font-size: 40px;
+
+}
+
+#urunlercont {
+  color: #e5e5e5;
+  font-size: 2.26rem;
+  text-transform: uppercase;
+  height: 500px;
+  margin-top: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 1;
+  margin-left: 10%;
+}
+
+.animation {
+  height: 50px;
+  overflow: hidden;
+  margin-left: 1rem;
+}
+
+.animation>div>div {
+  padding: 0.25rem 0.75rem;
+  height: 2.81rem;
+  margin-bottom: 2.81rem;
+  display: inline-block;
+}
+
+.animation div:first-child {
+  animation: text-animation 8s infinite;
+}
+
+.first div {
+  /* background-color:#20a7d8; */
+  background-color: rgb(223, 66, 9);
+}
+
+.second div {
+  background-color: #CD921E;
+}
+
+.third div {
+  /* background-color:#c10528; */
+  background-color: #1d1680;
+}
+
+@keyframes text-animation {
+  0% {
+    margin-top: -0.70rem;
+  }
+
+  10% {
+    margin-top: -0.70rem;
+  }
+
+  20% {
+    margin-top: -6.40rem;
+  }
+
+  30% {
+    margin-top: -6.40rem;
+  }
+
+  40% {
+    margin-top: -12.24rem;
+  }
+
+  60% {
+    margin-top: -12.24rem;
+  }
+
+  70% {
+    margin-top: -6.40rem;
+  }
+
+  80% {
+    margin-top: -6.40rem;
+  }
+
+  90% {
+    margin-top: -0.70rem;
+  }
+
+  100% {
+    margin-top: -0.70rem;
+  }
+}
+
+.urunlerkart {
+  display: flex;
+  justify-content: space-around;
+}
+
+#urunlerkart {
+  /* margin-left: 2%; */
+  margin-top: 5%;
+  background-color: rgba(0, 0, 0, 0.877);
+}
+
+#urunlerkart .card-body p {
+  color: white;
+}
+
+#urunlerkart1 {
+  /* margin-left: 2%; */
+  margin-top: 5%;
+  background-color: rgba(0, 0, 0, 0.877);
+}
+
+#urunlerkart1 .card-body p {
+  color: white;
+}
+
+#urunlerkart2 {
+  /* margin-left: 2%; */
+  margin-top: 5%;
+  background-color: rgba(0, 0, 0, 0.877);
+}
+
+#urunlerkart2 .card-body p {
+  color: white;
+}
+
+#urunlerkart3 {
+  /* margin-left: 2%; */
+  margin-top: 5%;
+  background-color: rgba(0, 0, 0, 0.877);
+}
+
+#urunlerkart3 .card-body p {
+  color: white;
+}
+
+.galeriBaslik {
+  display: flex;
+  justify-content: center;
+}
+
+#baslikGaleri {
+  position: absolute;
+  color: white;
+  z-index: 1;
+  font-family: monospace;
+  margin-top: 10%;
+  font-weight: bold;
+  /* margin-left: 40%; */
+  letter-spacing: 10px;
+  font-size: 50px;
+  text-shadow: rgba(255, 255, 255, 0.226) 5px 5px;
+}
+
+
+
+.img-thumbnail {
+  margin-top: 3%;
+}
+
+#productscard1 {
+  width: 350px;
+  height: 500px;
+  border-radius: 3%;
+  background-color: rgb(19, 18, 18);
+  border: solid 3px;
+  border-color: white;
+  overflow: hidden;
+  margin-top: 3%;
+}
+
+#urunlerimg {
+  width: 350px;
+  height: 300px;
+  border-radius: 3%;
+}
+
+#productscard2 {
+  width: 350px;
+  height: 500px;
+  border-radius: 3%;
+  background-color: rgb(19, 18, 18);
+  border: solid 3px;
+  border-color: white;
+  overflow: hidden;
+  margin-top: 3%;
+}
+
+#urunlerimg1 {
+  width: 350px;
+  height: 300px;
+  border-radius: 3%;
+}
+
+#productscard3 {
+  width: 350px;
+  height: 500px;
+  border-radius: 3%;
+  background-color: rgb(19, 18, 18);
+  border: solid 3px;
+  border-color: white;
+  overflow: hidden;
+  margin-top: 3%;
+}
+
+#urunlerimg2 {
+  width: 350px;
+  height: 300px;
+  border-radius: 3%;
+}
+
+#productscard4 {
+  width: 350px;
+  height: 500px;
+  border-radius: 3%;
+  background-color: rgb(19, 18, 18);
+  border: solid 3px;
+  border-color: white;
+  overflow: hidden;
+  margin-top: 3%;
+}
+
+#urunlerimg3 {
+  width: 350px;
+  height: 300px;
+  border-radius: 3%;
+}
+
+#productscard5 {
+  width: 350px;
+  height: 500px;
+  border-radius: 3%;
+  background-color: rgb(19, 18, 18);
+  border: solid 3px;
+  border-color: white;
+  overflow: hidden;
+  margin-top: 3%;
+}
+
+#urunlerimg4 {
+  width: 350px;
+  height: 300px;
+  border-radius: 3%;
+}
+
+#productscard6 {
+  width: 350px;
+  height: 500px;
+  border-radius: 3%;
+  background-color: rgb(19, 18, 18);
+  border: solid 3px;
+  border-color: white;
+  overflow: hidden;
+  margin-top: 3%;
+}
+
+#urunlerimg5 {
+  width: 350px;
+  height: 300px;
+  border-radius: 3%;
+}
+
+.iletisimBaslik{
+  display: flex;
+  justify-content: center;
+}
+
+#baslikIletisim {
+  position: absolute;
+  color: white;
+  z-index: 1;
+  font-family: monospace;
+  margin-top: 10%;
+  font-weight: bold;
+  /* margin-left: 35%; */
+  letter-spacing: 10px;
+  font-size: 50px;
+  text-shadow: rgba(255, 255, 255, 0.226) 5px 5px;
+}
+
+#iletisimform {
+  margin-top: 5%;
+  margin-left: 5%;
+  border: solid 2px;
+  border-color: white;
+  width: 500px;
+  height: 530px;
+  background-color: rgb(36, 34, 34);
+}
+
+.iletisim {
+  display: flex;
+  justify-content: center;
+}
+
+#sosyalmedyabaslik {
+  color: white;
+  margin-top: 5%;
+}
+
+.sosyalmedyahesap {
+  display: flex;
+}
+
+.sosyalmedyahesap p {
+  color: white;
+  margin-top: 12%;
+  font-size: 30px;
+  margin-left: 2%;
+}
+
+.iletisimsosyalmedya {
+  margin-left: 5%;
+}
+
+
+
+
+@media screen and (max-width: 900px) {
+  .footer-section {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 1rem;
+  }
+
+  .footer-item {
+    margin-left: 0%;
+  }
+
+  .footer-item1 {
+    margin-left: 0%;
+  }
+
+  #thirdcard {
+    margin-top: 90%;
+    margin-left: 0%;
+    width: 200px;
+    height: 200px;
+    visibility: hidden;
+  }
+
+  #secondcard {
+    margin-top: 90%;
+    width: 200px;
+    height: 200px;
+    margin-left: 50%;
+    visibility: hidden;
+  }
+
+  #firstcard {
+    margin-top: 90%;
+    width: 200px;
+    height: 200px;
+    visibility: hidden;
+  }
+
+  #col1 {
+    top: 20%;
+    margin-left: 10%;
+  }
+
+  #col2 {
+    top: 20%;
+    margin-left: 55%;
+  }
+
+  #col3 {
+    top: 50%;
+    margin-left: 10%;
+  }
+
+  #col4 {
+    top: 50%;
+    margin-left: 55%;
+  }
+
+  #baslik1 {
+    margin-top: 30%;
+    font-size: 30px;
+  }
+
+  hr {
+    margin-top: 13%;
+  }
+
+  #hakkimizdabaslik {
+    font-size: 50px;
+  }
+
+  #hakkimizdabaslik::before {
+    width: 380px;
+  }
+
+  #nedenbiz {
+    margin-left: 10%;
+  }
+
+  #nedenbizfoto {
+    width: 300px;
+    height: 300px;
+    padding-left: 0%;
+  }
+
+  #urunlercont {
+    margin-top: 30%;
+    margin-left: -5%;
+  }
+
+  #urunlerimizyazi {
+    font-size: 20px;
+    margin-left: -12%;
+  }
+
+  #baslikUrunler {
+    margin-top: 60%;
+    font-size: 30px;
+  }
+
+  .animation {
+    margin-left: -60%;
+    margin-top: 20%;
+  }
+
+  #baslikGaleri {
+    margin-top: 40%;
+    font-size: 30px;
+  }
+
+  .iletisim {
+    display: contents;
+  }
+
+  #baslikIletisim {
+    margin-top: 40%;
+    font-size: 30px;
+  }
+
+  #iletisimform {
+    width: 350px;
+    height: 530px;
+    overflow: hidden;
+  }
+
+  .nav-item {
+    margin-left: 5%;
+  }
+}
